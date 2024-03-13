@@ -1,0 +1,292 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 12%;
+    position: sticky;
+    z-index: 8439284;
+    top: 0;
+    align-items: center;
+    box-shadow: var(--shadow-medium);
+    background-color: #fff;
+}
+.alert {
+    position: fixed;
+    bottom: 5rem;
+    left: 40%;
+    background: #000;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    padding-right: 3rem;
+    border: 0;
+    width: 22rem;
+    transition: all 0.7s ease;
+    margin: auto;
+}
+.error {
+    background-color: rgb(189, 21, 21);
+}
+
+.success {
+    background-color: rgb(50, 186, 20);
+}
+
+.warning {
+    background-color: rgb(242, 255, 0);
+}
+
+.line {
+    height: 5px;
+    animation: increase 2s 0s;
+    position: fixed;
+    bottom: 4.68rem;
+    left: 40%;
+    width: 22rem;
+    transition: all 0.7s ease;
+    margin: auto;
+}
+
+@keyframes increase {
+    0% {
+        width: 22rem;
+    }
+
+    100% {
+        width: 0rem;
+    }
+}
+.close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.6rem;
+    cursor: pointer;
+    right: 1rem;
+}
+header li a {
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+header li a:hover {
+    color: var(--hover-color);
+}
+header .logo span {
+    color: var(--main-color);
+}
+header ul {
+    align-items: center;
+}
+
+.drop {
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    background: #fff;
+    width: max-content;
+    box-shadow: var(--shadow-light);
+    width: 20%;
+    padding: 1rem;
+    animation: fadeIn 0.2s ease-in 0s;
+    display: none;
+}
+.active {
+    display: block;
+}
+@keyframes fadeIn {
+    0% {
+        transform: translateY(1rem);
+    }
+}
+.btn-1,
+.btn-2 {
+    width: 48%;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.profile-update {
+    background-color: #3b87ea !important;
+}
+.box-sm {
+    border: 2px solid rgb(159, 159, 159);
+    margin: 1rem 0;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    color: rgb(150, 150, 150);
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.col {
+    /* width: 50%; */
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+.product-img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.col input[type="number"] {
+    width: 4rem;
+    height: 2.3rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+input[type="file"] {
+    color: var(--main-color);
+    font-size: 1rem;
+}
+input[type="file"]::-webkit-file-upload-button {
+    margin-top: .5rem;
+    width: 50%;
+    padding: 0.8rem;
+    background-color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+}
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: var(--hover-color);
+    transform: scale(0.97);
+    transition: all 0.3s ease-in;
+}
+
+.btn-custom {
+    width: 60%;
+    display: inline-block;
+}
+.form_product {
+}
+
+select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    background: var(--main-color);
+    cursor: pointer;
+    border: 0;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 1rem 0;
+    height: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+option:hover,
+select:hover {
+    background: var();
+    transition: all 0.3s ease-in;
+}
+
+.order_box {
+    box-shadow: var(--shadow-light);
+    padding: 1rem;
+}
+
+.loader {
+    animation: rotate 0.8s infinite forwards;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+input[type="password"],
+.passwd {
+    position: relative;
+    z-index: 30;
+}
+.showHide {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 31;
+    background: transparent;
+    color: var(--main-color);
+    
+}
+.form {
+    text-align: right;
+    width: 100%;
+    height: 91.6vh;
+    background: url("../imgs/login.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.form h2{
+    color: #fff;
+}
+.form form{
+    color: #fff;
+    width: 35%;
+    margin-right: 5rem;
+}
+.form .update_form{
+    color: #fff;
+    width: 50%;
+    margin-right: 5rem;
+}
+input {
+    background: #efefef1f;
+    border-radius: 5.5rem;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.update_form legend{
+    color: var(--main-color);
+}
+.update_form input{
+   background-color: transparent;
+}
+.update_form input[type="submit"]{
+    background-color: var(--main-color);
+}
+.form .update_form fieldset{
+   border-radius: .5rem;
+}
+input::placeholder{
+    color: #fff;
+}
+input[type="file"]{
+    border-radius: 0;
+    background-color: transparent;
+}

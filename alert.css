@@ -1,0 +1,55 @@
+.alert {
+    position: fixed;
+    bottom: 5rem;
+    left: 40%;
+    background: #000;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    padding-right: 3rem;
+    border: 0;
+    width: 22rem;
+    transition: all 0.7s ease;
+    margin: auto;
+    z-index: 34878247;
+
+}
+.error {
+    background-color: rgb(189, 21, 21);
+}
+
+.success {
+    background-color: rgb(50, 186, 20);
+}
+
+.warning {
+    background-color: rgb(242, 255, 0);
+}
+
+.line {
+    height: 5px;
+    animation: increase 2s 0s;
+    position: fixed;
+    bottom: 4.68rem;
+    left: 40%;
+    width: 22rem;
+    transition: all 0.7s ease;
+    margin: auto;
+}
+
+@keyframes increase {
+    0% {
+        width: 22rem;
+    }
+
+    100% {
+        width: 0rem;
+    }
+}
+.close {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.6rem;
+    cursor: pointer;
+    right: 1rem;
+    color: #fff!important;
+}

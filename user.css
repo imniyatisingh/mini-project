@@ -1,0 +1,103 @@
+.container {
+    width: 80%;
+    margin: 3rem auto 3rem;
+}
+.drop {
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    background: #fff;
+    width: max-content;
+    box-shadow: var(--shadow-light);
+    width: 20%;
+    padding: 1rem;
+    animation: fadeIn 0.2s ease-in 0s;
+    display: none;
+}
+.active {
+    display: block;
+}
+@keyframes fadeIn {
+    0% {
+        transform: translateY(1rem);
+    }
+}
+.btn-1,
+.btn-2 {
+    width: 49%;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.profile-update {
+    background-color: #3b87ea !important;
+}
+.modal {
+    background: #fff;
+    position: fixed;
+    border: 2px solid;
+    width: 50%;
+    top: 40%;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: var(--shadow-medium);
+    left: 25%;
+    display: none;
+}
+.modal p {
+    font-size: 1.1rem;
+}
+.modal hr {
+    width: 100%;
+}
+
+.modal .btns {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    margin: 0;
+}
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+.row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+fieldset {
+    border: 2px solid #dedede;
+    outline: none;
+}
+input[type="password"],
+.passwd {
+    position: relative;
+    z-index: 30;
+}
+.showHide {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 31;
+    background: transparent;
+    color: var(--main-color);
+}
+.update_form .showHide {
+    top: 0.3rem;
+}
